@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="container-buttons" style="margin-left: 410px; margin-bottom: 10px;">
+        <button (click)="on()"  style="background-color: green; color: honeydew; width: 40px;" > On</button>
+        <button (click)="off()" style="background-color: rgb(199, 23, 23); color: honeydew; width: 40px;"  > Of</button>
+    </div>
+    <div class="width:70%">
+        <div [formGroup]="form">
+            
+            <div class="contenedor temperaturaReferencia">
+                <h4>Temperatura de referencia:
+                    <input type="number" id="cajaTReferencia" formControlName="temperatura" name="cajaTemperatura"
+                        size="10px">
+                    <span id="temperaturaReferencia"></span>
+                </h4>
+            </div>
+            
+
+            <div class="contenedor temperaturaActual">
+                <h4>Temperatura: {{temperaturaActual}} °
+                </h4>
+            </div>
+
+            <div class="contenedor periodoDeMuestreo">
+                <h4>Periodo de muestreo:
+                    <input type="number" id="cajaPMuestreo" formControlName="periodo" name="cajaPeriodo" size="10px">
+                    <span id="periodoDeMuestreo"></span>
+                </h4>
+            </div>
+
+            <div class="contenedor voltaje">
+                <h4>Voltaje:
+                    <input type="number" id="cajaVoltaje" formControlName="voltaje" name="cajaVoltaje" size="10px">
+                    <button type="submit" id="confirmarV" name="Aceptar" (click)="initProcess()"> Iniciar</button>
+                    <span id="voltaje"></span>
+                </h4>
+            </div>
+
+            <div class="contenedor">
+                <div class="{{temperaturaActual <= 10 ? 'horno' :  temperaturaActual > 39 ? 'horno caliente' : 'horno tibio'}}" id="horno"></div>
+            </div>
+        </div>
+    </div>
+    <div class="width:30%">
+        <div id="chartdiv" style="width: 100%; height: 500px"></div>
+    </div>
+</div>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "scada"
+    }
+  },
+  "defaultProject": "scada",
+  "cli": {
+    "analytics": "95741c37-0956-49ab-a7f2-9bb097c3ebcf"
+  }
 }

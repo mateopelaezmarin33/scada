@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.contenedor{
+    padding: 0px;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    background-color: #ffb;
+    border: 10px solid #000000;
+}
+
+
+
+.temperaturaReferencia{
+    background-color: #444;
+    height: 30px;
+    border-bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.temperaturaActual{
+    background-color: #444;
+    height: 30px;
+    border-bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.periodoDeMuestreo{
+    background-color: #444;
+    height: 30px;
+    border-bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.voltaje{
+    background-color: #444;
+    height: 30px;
+    border-bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.horno{
+    background-color: #FFFF00;
+    border: 5px solid #808080;
+    width: 200px;
+    height: 100px;
+    margin-top: 190px;
+    margin-left: 150px;
+    position: absolute;
+    transition: all 0.3s
+}
+
+.tibio{
+    background-color: #ff8000;
+    border: 5px solid #808080;
+    width: 200px;
+    height: 100px;
+    margin-top: 190px;
+    margin-left: 150px;
+    position: absolute;
+    transition: all 0.3s
+}
+
+.caliente{
+    background-color: #900;
+    border: 5px solid #808080;
+    width: 200px;
+    height: 100px;
+    margin-top: 190px;
+    margin-left: 150px;
+    position: absolute;
+    transition: all 0.3s
+}
+
+
+
