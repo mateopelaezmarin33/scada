@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ScadaComponent } from './components/scada/scada.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule, AngularFirestore } from '@angular/fire/firestore';
+import { FirestoreSettingsToken} from '@angular/fire/firestore';
 const firebaseConfig = {
   apiKey: "AIzaSyCOIDzjpLk9ZTlLocjMY85PM5P4bKfzpDU",
   authDomain: "scada-uco.firebaseapp.com",
@@ -29,7 +30,7 @@ const firebaseConfig = {
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [AngularFirestore],
+  providers: [AngularFirestore, { provide: FirestoreSettingsToken, useValue: {} }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

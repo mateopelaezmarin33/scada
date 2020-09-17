@@ -1,7 +1,7 @@
 <div class="row">
     <div class="container-buttons" style="margin-left: 410px; margin-bottom: 10px;">
-        <button (click)="on()"  style="background-color: green; color: honeydew; width: 40px;" > On</button>
-        <button (click)="off()" style="background-color: rgb(199, 23, 23); color: honeydew; width: 40px;"  > Of</button>
+        <button (click)="initProcess(true)"  style="background-color: green; color: honeydew; width: 40px;" > On</button>
+        <button (click)="initProcess(false)" style="background-color: rgb(199, 23, 23); color: honeydew; width: 40px;"  > Of</button>
     </div>
     <div class="width:70%">
         <div [formGroup]="form">
@@ -30,7 +30,7 @@
             <div class="contenedor voltaje">
                 <h4>Voltaje:
                     <input type="number" id="cajaVoltaje" formControlName="voltaje" name="cajaVoltaje" size="10px">
-                    <button type="submit" id="confirmarV" name="Aceptar" (click)="initProcess()"> Iniciar</button>
+                    <button type="submit" id="confirmarV" name="Aceptar" (click)="initProcess(true)"> Iniciar</button>
                     <span id="voltaje"></span>
                 </h4>
             </div>

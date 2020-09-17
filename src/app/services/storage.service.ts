@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore, DocumentReference } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { Data } from '@angular/router';
 
@@ -14,7 +14,7 @@ export class StorageService {
     return this.firestore.collection('data',ref => ref.orderBy('value')).snapshotChanges();
   }
 
-  public saveData(data: Data) {
+  public saveData(data: Data): Promise<any> {
     return this.firestore.collection('data').add(JSON.parse (JSON.stringify(data)));
   }
 
